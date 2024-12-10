@@ -1,0 +1,141 @@
+/* productDetail.css */
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left h1 {
+  color: #fc3746;
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.navbar-right ul {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-right ul li a:hover {
+  color: #fc3746;
+}
+
+.product-details {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+}
+
+.product-details-content {
+  background-color: #1e1e1e;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.slick-slider {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fc3746;
+}
+
+.product-details-content h2 {
+  color: #fc3746;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.product-details-content p {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.product-details-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modify-btn,
+.delete-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modify-btn {
+  background-color: #fd192c;
+  color: #ffffff;
+}
+
+.modify-btn:hover {
+  background-color: #fc3746;
+}
+
+.delete-btn {
+  background-color: #fd192c;
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  background-color: #fc3746;
+}
+
+@media (max-width: 768px) {
+  .product-details-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modify-btn,
+  .delete-btn {
+    width: 100%;
+  }
+}
